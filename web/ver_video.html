@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link href="css/style_ver_video.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="main-header">
+            <h1><i class="fa fa-video-camera" aria-hidden="true"></i>Tefor</h1>
+        </header>
+        <div class="content-main">
+            <div id="video">
+                <script id="ver-video-template" type="text/template">
+                    {{=it.videoCode}}
+                    <!--<p class="subido-por">Subido por: <a class="autor" href="ver_perfil.html">{{=it.usuarioId}}</a></p>-->
+                </script>
+            </div>
+
+            <div id="autor">
+                <script type="text/template" id="autor-template">
+                    <p class="subido-por">Subido por: <a class="autor" onclick="verAutor({{=it.usuarioId}})">{{=it.userName}}</a></p>
+                </script>
+            </div>
+
+            <!--<p class="subido-por">Subido por: <a class="autor" href="ver_perfil.html">Alekoltan</a></p>-->
+
+            <div class="comentarios">
+                <p>Comentarios</p>
+                <div class="los-comentarios">
+                    <input id="comentario" class="opinion" type="text" placeholder="que opinas"/>
+                    <button id="btn-comentario" class="boton">comentar</button>
+
+                    <ul id="comentarios">
+                    </ul>
+                    <script type="text/template" id="comentarios-template">
+                        {{=it.comentario}}
+                    </script>
+                </div>
+            </div>
+
+        </div>
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="js/doT.min.js" type="text/javascript"></script>
+        <script src="js/ver_video.js" type="text/javascript"></script>
+    </body>
+</html>

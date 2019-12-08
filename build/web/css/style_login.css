@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    width: 100%;
+    padding: 0px;
+}
+
+p {
+    color: gray;
+}
+
+.content-main {
+    width: 100%;
+    background: white;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .content-main {
+        margin: 10% 0;
+    }
+}
+
+@media (min-width: 992px) {
+    html, body {
+        background: #1abc9c;
+    }
+    
+    .content-main {
+        width: 296px;
+        height: 482px;
+        margin: 50px auto;
+    }
+}
+
+.necesitas-cuenta {
+    text-align: center;
+    margin: 0px;
+    padding-top: 44px;
+    padding-bottom: 22px;
+    font-size: 12px;
+}
+
+.boton {
+    background: #1abc9c;
+    padding: 16px 72px;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0;
+    border-radius: 3%;
+}
+
+button {
+    width: 245px;
+    height: 50px;
+    background: #1abc9c;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 3%;
+}
+
+@media (min-width: 992px) {
+    .necesitas-cuenta {
+        margin: 4px;
+        font-size: 13px;
+    }
+
+    button {
+        margin: 30px 25px;
+    }
+    
+    .boton {
+        margin: 0 25px;
+        padding: 18px 76px;
+        display: block;
+    }
+}
+
+hr {
+    margin: 22px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.campo-de-texto {
+    display: block;
+    width: 250px;
+    height: 45px;
+    margin: 4px auto;
+    font-size: 12px;
+    padding: 10px;
+}
+
+input[type="checkbox"] {
+    margin-top: 23px;
+}
+
+.contraseña-olvidada {
+    text-align: center;
+    font-size: 12px;
+    margin: 29px 25px;
+}
+
+@media (min-width: 768px) {
+    hr {
+        width: 40%;
+        margin: 22px auto;
+    }
+}
+
+@media (min-width: 992px) {
+    hr {
+        width: 100%;
+        margin: 50px auto;
+    }
+    
+    .contraseña-olvidada {
+        text-align: right;
+    }
+}

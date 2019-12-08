@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subir video</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link href="css/style_login.css" rel="stylesheet" type="text/css"/>
+        <link href="css/subir_video.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="content-main">
+            <form>
+                <!--video id-->
+                <div class="grupo-formulario">
+                    <label for="titulo">Titulo</label>
+                    <input id="titulo" type="text" class="campo-de-texto"
+                           placeholder="titulo del video">
+                </div>
+                
+                <div class="grupo-formulario">
+                    <label for="descripcion">Descripcion</label>
+                    <input id="descripcion" type="text" class="campo-de-texto"
+                           placeholder="descripcion del video">
+                </div>
+                
+                <div class="grupo-formulario">
+                    <label for="videoCode">video code</label>
+                    <input id="videoCode" type="text" class="campo-de-texto"
+                           placeholder="video code">
+                </div>
+                
+                <!--usuario-id-->
+                
+                <div class="grupo-formulario">
+                    <label for="youtubeVideoID">youtube video id</label>
+                    <input id="youtubeVideoID" type="text" class="campo-de-texto"
+                           placeholder="youtube video id">
+                </div>
+                
+                <!--fecha-subida-->
+                
+                <button id="btn-subir-video">Subir</button>
+            </form>
+        </div>
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="js/doT.min.js" type="text/javascript"></script>
+        <script src="js/subir-video.js" type="text/javascript"></script>
+    </body>
+</html>

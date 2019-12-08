@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Editar Perfil</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable">
+        <link href="css/style_editar_perfil.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="main-header">
+            <h1><i class="fa fa-video-camera" aria-hidden="true"></i>Alekoltan</h1>
+        </header>
+        <div  class="content-main">
+            <ul id="editar-videos">
+            </ul>
+            <script id="editar-videos-usuario-template" type="text/template">
+                <button onclick="editarVideo({{=it.videoId}})">
+                    <img src="img/edit.png"></button>
+                <button onclick="eliminarVideo({{=it.videoId}})">
+                    <img src="img/delete.png"></button>
+                {{=it.titulo}}</li>
+            </script>
+        </div>
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="js/doT.min.js" type="text/javascript"></script>
+        <script src="js/editar_perfil.js" type="text/javascript"></script>
+    </body>
+</html>
